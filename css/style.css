@@ -50,6 +50,7 @@ header {
     Letter-spacing: 11px;
     font-size:  14vh;
     color: rgb(0, 0, 0);
+    line-height: 50px;
 }
 
 .header-img {
@@ -122,6 +123,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -162,12 +164,18 @@ main {
     .about-me-img {
         display: none;
     }
+
+    .about-me-description {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 900px) {
 
     .header-title {
         font-size: 90px;
+        
     }
 
     .header-img {
@@ -211,5 +219,52 @@ main {
 @media only screen and (max-width: 890px) {
     .header-title {
         max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .about-me-text {
+        font-size: 100px;
+    }
+
+    .about-me-description {
+        font-size: 60px;
+    }
+
+    .projects-title {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-me-text {
+        font-size: 85px;
+    }
+
+    .header-title {
+        font-size: 8px;
+        max-width: 330px;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .project-img {
+        width: 350px;
+    }
+
+    .project-text {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .header-img {
+        width: 70px;
+    }
+    
+    .about-me-text {
+        font-size: 70px;
     }
 }
